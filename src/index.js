@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css, Global } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -6,8 +8,28 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Global
+      styles={css`
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          color: #000;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+            Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+          font-size: 16px;
+          background-color: rgba(253, 239, 239, 0.8);
+          background-image: url('https://hagrid.io/static/media/texture.69b7de99892a7b6af46c.png');
+          font-weight: bold;
+          line-height: 24px;
+        }
+      `}
+    />
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
