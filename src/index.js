@@ -18,13 +18,14 @@ root.render(
         body {
           margin: 0;
           color: #000;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-            Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+          font-family: 'Be Vietnam Pro', sans-serif;
           font-size: 16px;
-          background-color: rgba(253, 239, 239, 0.8);
+          background-color: rgba(253, 239, 239, 1);
           background-image: url('https://hagrid.io/static/media/texture.69b7de99892a7b6af46c.png');
-          font-weight: bold;
+          font-weight: 700;
           line-height: 24px;
+          overflow-x: hidden;
+          position: relative;
         }
       `}
     />
